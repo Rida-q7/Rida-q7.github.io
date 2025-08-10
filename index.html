@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MRFA - Multi Royal Furniture and Appliances</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Italiana&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+
+
+</head>
+
+
+
+<body>
+<div class="page-overlay" id="page-overlay"></div>
+  <div class="announcement-bar">
+  <div class="announcement-text">
+    Free delivery on orders over Rs.10,000!
+  </div>
+  <div class="top-bar-icons">
+    <a
+  href="https://www.facebook.com/YourPageUsername"
+  class="social-icon facebook"
+  title="Facebook"
+  target="_blank"
+>
+  <i class="fab fa-facebook-f"></i>
+</a>
+
+    <a
+  href="https://www.tiktok.com/@YourTikTokUsername"
+  class="social-icon tiktok"
+  title="TikTok"
+  target="_blank"
+>
+  <i class="fab fa-tiktok"></i>
+</a>
+
+  </div>
+</div>
+
+
+  <!-- Top Info Bar -->
+  <div class="top-strip">
+    <div class="left-contact">
+      <p>📞 +92 300 1234567</p>
+      <p>✉️ support@mrfa.com</p>
+    </div>
+    <div class="login-icon tooltip">
+  <button onclick="window.location.href='login.html'">👤</button>
+  <span class="tooltip-text">Login</span>
+</div>
+
+
+  </div>
+
+  <!-- Header Section -->
+  <header class="main-header">
+
+    <div class="branding">
+  <h1 class="brand-name">MRFA</h1>
+  <p class="slogan">Multi Royal Furniture and Appliances</p>
+</div>
+
+    <div class="header-icons">
+      <span class="icon" id="search-icon">🔍</span>
+      <span class="icon" id="cart-icon">🛒</span>
+    </div>
+  </header>
+
+  <!-- Search Overlay -->
+<div class="search-overlay" id="search-overlay">
+  <input type="text" id="search-input" placeholder="Search..." />
+  <button id="search-btn">Search</button>
+</div>
+
+
+
+  <!-- Cart Sidebar -->
+  <div class="cart-sidebar" id="cart-sidebar">
+  <span class="close-cart" id="close-cart-btn">✖</span>
+  <h2>Your Cart</h2>
+  
+  <div class="cart-content">
+    <p>Subtotal: <span id="subtotal">Rs. 0.00</span></p>
+    <button onclick="window.location.href='checkout.html'">Checkout</button>
+  </div>
+</div>
+</header>
+
+
+<nav class="navbar">
+<div class="hamburger" id="hamburger">&#9776;</div>
+
+<ul class="nav-menu"id="nav-menu">
+  <li><a href="home.html">Home</a></li>
+
+  <!-- Bedroom -->
+  <li class="dropdown">
+    <a href="bedroom.html">Bedroom ▾</a>
+    <ul class="dropdown-menu">
+      <li class="sub-dropdown">
+        <a href="#">Furniture </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="beds.html">Beds</a></li>
+          <li><a href="headboards.html">Headboards</a></li>
+          <li><a href="dressers.html">Dressers</a></li>
+          <li><a href="vanities.html">Vanities</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Seating </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="ottomans.html">Ottomans</a></li>
+          <li><a href="bedroom-benches.html">Benches</a></li>
+          <li><a href="loungers.html">Loungers</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Storage </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="wardrobes.html">Wardrobes</a></li>
+          <li><a href="nightstands.html">Nightstands</a></li>
+          <li><a href="underbed-storage.html">Underbed Storage</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Accessories </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="bedding.html">Bedding</a></li>
+          <li><a href="blankets.html">Blankets</a></li>
+          <li><a href="pillows.html">Pillows</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <!-- Living Room -->
+  <li class="dropdown">
+    <a href="living-room.html">Living Room ▾</a>
+    <ul class="dropdown-menu">
+      <li class="sub-dropdown">
+        <a href="#">Furniture </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="coffee-tables.html">Coffee Tables</a></li>
+          <li><a href="tv-units.html">TV Units</a></li>
+          <li><a href="console-tables.html">Console Tables</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Seating </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="sofas.html">Sofas</a></li>
+          <li><a href="recliners.html">Recliners</a></li>
+          <li><a href="armchairs.html">Armchairs</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Storage </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="bookshelves.html">Bookshelves</a></li>
+          <li><a href="storage-ottomans.html">Storage Ottomans</a></li>
+          <li><a href="cabinets.html">Cabinets</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Accessories </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="rugs.html">Rugs</a></li>
+          <li><a href="throws.html">Throws</a></li>
+          <li><a href="lamps.html">Lamps</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <!-- Kitchen -->
+  <li class="dropdown">
+    <a href="kitchen.html">Kitchen ▾</a>
+    <ul class="dropdown-menu">
+      <li class="sub-dropdown">
+        <a href="#">Furniture </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="kitchen-bases.html">Kitchen Bases</a></li>
+          <li><a href="kitchen-units.html">Kitchen Units</a></li>
+          <li><a href="kitchen-islands.html">Kitchen Islands</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Seating </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="barstools.html">Barstools</a></li>
+          <li><a href="high-chairs.html">High Chairs</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Storage </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="spice-racks.html">Spice Racks</a></li>
+          <li><a href="under-sink.html">Under-Sink Storage</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Accessories </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="cookware.html">Cookware</a></li>
+          <li><a href="utensils.html">Utensils</a></li>
+          <li><a href="bakeware.html">Bakeware</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <!-- Electronics -->
+  <li class="dropdown">
+    <a href="electronics.html">Electronics ▾</a>
+    <ul class="dropdown-menu">
+      <li class="sub-dropdown">
+        <a href="#">Furniture </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="tv-units.html">TV Units</a></li>
+          <li><a href="entertainment-walls.html">Entertainment Walls</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Seating </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="gaming-chairs.html">Gaming Chairs</a></li>
+          <li><a href="vr-seats.html">VR Seats</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Storage </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="media-racks.html">Media Racks</a></li>
+          <li><a href="console-stands.html">Console Stands</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Accessories </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="remotes.html">Remote Holders</a></li>
+          <li><a href="smart-devices.html">Smart Devices</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <!-- Office -->
+  <li class="dropdown">
+    <a href="office.html">Office ▾</a>
+    <ul class="dropdown-menu">
+      <li class="sub-dropdown">
+        <a href="#">Furniture </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="office-desks.html">Desks</a></li>
+          <li><a href="reception-desks.html">Reception Desks</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Seating </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="executive-chairs.html">Executive Chairs</a></li>
+          <li><a href="ergonomic-chairs.html">Ergonomic Chairs</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Storage </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="filing-cabinets.html">Filing Cabinets</a></li>
+          <li><a href="lockers.html">Lockers</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Accessories </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="monitor-stands.html">Monitor Stands</a></li>
+          <li><a href="whiteboards.html">Whiteboards</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <li><a href="deals.html">Deals</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+
+<a
+  href="https://wa.me/923001234567"
+  class="floating-whatsapp"
+  title="Chat with us on WhatsApp"
+  target="_blank"
+>
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+<div class="hero-slider">
+  <div class="slides">
+    <img src="images/img1f.jpg" class="slide active">
+    <img src="images/img2f.jpg" class="slide">
+    <img src="images/img3f.jpg" class="slide">
+    <img src="images/img4f.jpg" class="slide">
+  </div>
+  <div class="dots">
+    <span class="dot active-dot" onclick="showSlide(0)"></span>
+    <span class="dot" onclick="showSlide(1)"></span>
+    <span class="dot" onclick="showSlide(2)"></span>
+    <span class="dot" onclick="showSlide(3)"></span>
+  </div>
+</div>
+
+
+<section class="explore-slider-section">
+  <h2>Explore Our Collection</h2>
+
+  <div class="explore-slider-container">
+    <div class="explore-slider-track">
+      <a href="sofas.html" class="explore-slide">
+        <img src="images/sofa.jpg" alt="Sofa">
+        <p>Sofas</p>
+      </a>
+      <a href="fans.html" class="explore-slide">
+        <img src="images/console.jpg" alt="Consoles">
+        <p>Fans</p>
+      </a>
+      <a href="beds.html" class="explore-slide">
+        <img src="images/bed.jpg" alt="Bed">
+        <p>Beds</p>
+      </a>
+      <a href="chairs.html" class="explore-slide">
+        <img src="images/chair.jpg" alt="Chair">
+        <p>Chairs</p>
+      </a>
+      <a href="decor.html" class="explore-slide">
+        <img src="images/decor.jpg" alt="Decor">
+        <p>Decor</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="explore-dots">
+    <span class="dot active-dot" onclick="moveExploreSlide(0)"></span>
+    <span class="dot" onclick="moveExploreSlide(1)"></span>
+    <span class="dot" onclick="moveExploreSlide(2)"></span>
+  </div>
+</section>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

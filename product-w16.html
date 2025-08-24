@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="google-site-verification" content="V05J-q1Dg5J2TplGOp3k5Wo1mM21lxGcQUEe3UZaP_o" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Italiana&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+</head>
+<body>
+
+<div class="page-overlay" id="page-overlay"></div>
+  <div class="announcement-bar">
+  <div class="announcement-text">
+    Free delivery on orders over Rs.10,000!
+  </div>
+  <div class="top-bar-icons">
+    <a
+  href="https://www.facebook.com/YourPageUsername"
+  class="social-icon facebook"
+  title="Facebook"
+  target="_blank"
+>
+  <i class="fab fa-facebook-f"></i>
+</a>
+
+    <a
+  href="https://www.tiktok.com/@YourTikTokUsername"
+  class="social-icon tiktok"
+  title="TikTok"
+  target="_blank"
+>
+  <i class="fab fa-tiktok"></i>
+</a>
+
+  </div>
+</div>
+
+
+  <!-- Top Info Bar -->
+  <div class="top-strip">
+    <div class="left-contact">
+      <p>📞 0832443490</p>
+      <p>✉️ support@mrfa.com</p>
+    </div>
+    <div class="login-icon tooltip">
+  <button onclick="window.location.href='login.html'">👤</button>
+  <span class="tooltip-text">Login</span>
+</div>
+
+
+  </div>
+
+  <!-- Header Section -->
+  <header class="main-header">
+
+    <div class="branding">
+  <h1 class="brand-name">MRF</h1>
+  <p class="slogan">Multi Royal Furniture </p>
+</div>
+
+    <div class="header-icons">
+      <span class="icon" id="search-icon">🔍</span>
+      <span class="icon" id="cart-icon">🛒</span>
+    </div>
+  </header>
+
+ <!-- Search Overlay -->
+<div class="search-overlay" id="search-overlay" style="display: none;">
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="Search..." />
+    <button id="search-btn">Search</button>
+  </div>
+</div>
+
+
+
+
+  <!-- Cart Sidebar -->
+  <div class="cart-sidebar" id="cart-sidebar">
+  <span class="close-cart" id="close-cart-btn">✖</span>
+  <h2>Your Cart</h2>
+  
+  <div class="cart-content">
+    <p>Subtotal: <span id="subtotal">Rs. 0.00</span></p>
+    <button onclick="window.location.href='checkout.html'">Checkout</button>
+  </div>
+</div>
+
+<div id="content-wrapper">
+
+<nav class="navbar">
+<button id="hamburger" class="hamburger">&#9776;</button>
+
+
+<ul class="nav-menu"id="nav-menu">
+  <li><a href="index.html">Home</a></li>
+
+  <!-- Bedroom -->
+  <li class="dropdown">
+    <a href="#">Bedroom </a>
+    <ul class="dropdown-menu">
+      <li class="sub-dropdown">
+        <a href="#">Furniture </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="bed.html">Beds</a></li>
+          <li><a href="headboard.html">Headboards</a></li>
+          <li><a href="dressers.html">Dressers</a></li>
+          <li><a href="vanities.html">Vanities</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Seating </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="ottomans.html">Ottomans</a></li>
+          <li><a href="bedroom-benches.html">Benches</a></li>
+          <li><a href="loungers.html">Loungers</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Storage </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="wardrobes.html">Wardrobes</a></li>
+          <li><a href="nightstands.html">Nightstands</a></li>
+          <li><a href="underbed-storage.html">Underbed Storage</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Accessories </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="bedding.html">Bedding</a></li>
+          <li><a href="blankets.html">Blankets</a></li>
+          <li><a href="pillows.html">Pillows</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <!-- Living Room -->
+  <li class="dropdown">
+    <a href="#.html">Living Room </a>
+    <ul class="dropdown-menu">
+      <li class="sub-dropdown">
+        <a href="#">Furniture </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="coffee-tables.html">Coffee Tables</a></li>
+          <li><a href="tv-units.html">TV Units</a></li>
+          <li><a href="console-tables.html">Console Tables</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Seating </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="sofas.html">Sofas</a></li>
+          <li><a href="recliners.html">Recliners</a></li>
+          <li><a href="armchairs.html">Armchairs</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Storage </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="bookshelves.html">Bookshelves</a></li>
+          <li><a href="storage-ottomans.html">Storage Ottomans</a></li>
+          <li><a href="cabinets.html">Cabinets</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Accessories </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="rugs.html">Rugs</a></li>
+          <li><a href="throws.html">Throws</a></li>
+          <li><a href="lamps.html">Lamps</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <!-- Kitchen -->
+  <li class="dropdown">
+    <a href="#">Kitchen </a>
+    <ul class="dropdown-menu">
+      <li class="sub-dropdown">
+        <a href="#">Furniture </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="kitchen-bases.html">Kitchen Bases</a></li>
+          <li><a href="kitchen-units.html">Kitchen Units</a></li>
+          <li><a href="kitchen-islands.html">Kitchen Islands</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Seating </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="barstools.html">Barstools</a></li>
+          <li><a href="high-chairs.html">High Chairs</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Storage </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="spice-racks.html">Spice Racks</a></li>
+          <li><a href="under-sink.html">Under-Sink Storage</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Accessories </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="cookware.html">Cookware</a></li>
+          <li><a href="utensils.html">Utensils</a></li>
+          <li><a href="bakeware.html">Bakeware</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  
+  <!-- Office -->
+  <li class="dropdown">
+    <a href="#">Office </a>
+    <ul class="dropdown-menu">
+      <li class="sub-dropdown">
+        <a href="#">Furniture </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="office-desks.html">Desks</a></li>
+          <li><a href="reception-desks.html">Reception Desks</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Seating </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="executive-chairs.html">Executive Chairs</a></li>
+          <li><a href="ergonomic-chairs.html">Ergonomic Chairs</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Storage </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="filing-cabinets.html">Filing Cabinets</a></li>
+          <li><a href="lockers.html">Lockers</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Accessories </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="monitor-stands.html">Monitor Stands</a></li>
+          <li><a href="whiteboards.html">Whiteboards</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+
+<a
+  href="https://wa.me/923001234567"
+  class="floating-whatsapp"
+  title="Chat with us on WhatsApp"
+  target="_blank"
+>
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+
+
+<div id="content-wrapper">
+    <div class="product-container">
+      <!-- Left Side: Images -->
+      <div class="image-section">
+        <img id="mainImage16" src="images/w16.jpg" alt="Product Image" class="main-img">
+        <div class="thumbnails16">
+          <img src="images/w16.jpg" class="thumb" onclick="changeImage16(this)">
+          <img src="images/vov.jpg" class="thumb" onclick="changeImage16(this)">
+          
+        </div>
+      </div>
+
+      <!-- Right Side: Product Info -->
+      <div class="info-section">
+        <h2>3 Door Wardrobe – Grey Oak</h2>
+  <div class="price">R2699.00</div>      
+   
+    <p><strong>•Modern Design: </strong>The wardrobe features a contemporary two-toned style that complements various decor themes.</p>
+     <p><strong>•Spacious Storage:</strong>With three doors and four bottom drawers, it offers generous storage space for all your needs.</p>
+      <p><strong>•Rectangular Mirror: </strong>The built-in mirror adds convenience and functionality, making it easy to check your outfit.</p>
+
+
+        <!-- Color Options -->
+        <div class="colors">
+          <span>Select Colour:</span>
+          <button class="color-btn" onclick="changeColor16('white')">white</button>
+          <button class="color-btn" onclick="changeColor16('light-grey')">light-grey</button>
+           <button class="color-btn" onclick="changeColor16('dark-sonama-oak')">dark-sonama-oak</button>
+           
+        </div>
+
+        <!-- Quantity Selector -->
+        <div class="quantity">
+          <button onclick="decreaseQty()">-</button>
+          <input type="text" id="qty" value="1">
+          <button onclick="increaseQty()">+</button>
+        </div>
+
+        <!-- Add to Cart -->
+        <button 
+          class="add-to-cart-btn"
+          data-id=" MWBR120G"
+          data-name="3 Door Wardrobe – Grey Oak "
+          data-price="2699"
+          data-link="product-w16.html"
+          data-image="images/w16.jpg"
+        >
+          Add To Basket
+        </button>
+
+        <div class="extra-info">
+        <p class="shipping">SHIPPING: Your order will be delivered to you flat-packed (unassembled) in a box.</p>
+        <p class="instore">IN-STORE COLLECTION: Item is assembled (where assembly is required) and free to collect.</p>
+        <p><strong>SKU:</strong> MW3DMARD</p>
+        <p><strong>Categories:</strong> Bedroom Furniture, Wardrobes</p>
+
+       
+       
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- === Footer Section === -->
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- Brand Info -->
+    <div class="footer-column">
+      <h2 class="footer-logo">MRF<span>A</span></h2>
+      <p>Multi Royal Furniture – Premium furniture for every room in your home. 
+         Comfort, quality, and style that lasts.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sofas.html">Sofas</a></li>
+        <li><a href="bed.html">Beds</a></li>
+        <li><a href="chairs.html">Chairs</a></li>
+        <li><a href="decor.html">Decor</a></li>
+      </ul>
+    </div>
+
+    <!-- Customer Support -->
+    <div class="footer-column">
+      <h3>Customer Support</h3>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">Shipping & Returns</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-column">
+      <h3>Stay Updated</h3>
+      <p>Subscribe to get special offers, free giveaways, and new arrivals.</p>
+      <form id="newsletter-form" method="POST" action="/subscribe" class="newsletter-form">
+  <input type="email" name="email" placeholder="Enter your email" required>
+  <button type="submit">Subscribe</button>
+</form>
+
+
+      <!-- Social Media -->
+      <div class="footer-social">
+        <a href="https://facebook.com" target="_blank" class="social-icon fb">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-icon tw">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-icon ig">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="social-icon li">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>© 2025 Multi Royal Furniture. All Rights Reserved.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

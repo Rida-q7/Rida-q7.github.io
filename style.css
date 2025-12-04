@@ -1973,3 +1973,394 @@ body {
   margin-top: 20px;
 }
 
+/* Import fonts */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container flex side-by-side always */
+.double-hero {
+  display: flex;
+  gap: 18px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Card with shadow and round corners */
+.hero-box {
+  position: relative;
+  flex: 1;
+  height: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  background: #fff;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.hero-box:hover {
+  transform: scale(1.02);
+}
+
+/* Image styling */
+.hero-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* Zoom image on hover */
+.hero-box:hover img {
+  transform: scale(1.08);
+}
+
+/* Gradient overlay for depth */
+.hero-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 40%, rgba(196,147,97,0.8) 100%);
+  pointer-events: none;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  max-width: 40%;           /* smaller width */
+  color: #2e2e2e;           /* subtle text color */
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.45);  /* lighter box */
+  padding: 8px 12px;       /* smaller padding */
+  border-radius: 6px;      /* slightly smaller rounding */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* softer shadow */
+  z-index: 2;
+
+  opacity: 0;
+  animation: fadeInUp 0.9s forwards;
+}
+
+
+/* Stagger the animation for the second box */
+.hero-box:nth-child(2) .hero-overlay {
+  animation-delay: 0.3s;
+}
+
+/* Heading styling */
+.hero-overlay h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  margin: 0 0 8px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* Paragraph */
+.hero-overlay p {
+  font-size: 11px;
+  margin: 0 0 15px;
+  color: #5a5147;
+  line-height: 1.4;
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  padding: 10px 26px;
+  background: #c49361;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 28px;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(196, 147, 97, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background: #a6753d;
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  /* Container scroll */
+  .double-hero {
+    overflow-x: auto;                  /* enables horizontal scrolling */
+    flex-wrap: nowrap;                 /* keep boxes in one row */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+    gap: 12px;
+    padding: 12px;
+  }
+
+  /* Each hero box width for mobile */
+  .hero-box {
+    flex: 0 0 80%; /* box takes 80% of screen width */
+    min-width: auto;
+    height: 280px; /* smaller height for mobile */
+  }
+
+  /* Text overlay adjustments */
+  .hero-overlay {
+    max-width: 85%;
+    padding: 8px 12px;
+    bottom: 15px;
+    left: 10px;
+  }
+
+  .hero-overlay h2 {
+    font-size: 16px;
+  }
+
+  .hero-overlay p {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Desktop: 4 in a row */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 15px;
+}
+
+/* Product card styling */
+.product-card img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+/* MOBILE: 2 per row */
+@media (max-width: 500px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    gap: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECTION HEADING */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background-color: #c28b5a;  /* warm neutral brown */
+  display: block;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* PRODUCT GRID */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+/* CARD DESIGN */
+.product-card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT — ZOOM + SHADOW */
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 12px 24px rgba(0,0,0,0.15);
+}
+
+.product-img {
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+
+.product-img img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* ZOOM IMAGE ON HOVER */
+.product-card:hover img {
+  transform: scale(1.08);
+}
+
+/* TEXT AREA */
+.product-info {
+  padding: 15px;
+}
+
+.category {
+  color: #7b7b7b;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.product-name {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2e2e2e;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.add-btn {
+  width: 100%;
+  background: #c28b5a;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-btn:hover {
+  background: #a87345;
+}
+
+@media (max-width: 600px) {
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;             /* tighter spacing */
+    padding: 0 6px;
+  }
+
+  .product-card {
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.05);
+    overflow: hidden;
+  }
+
+  .product-img img {
+    height: 95px;         /* MUCH smaller image */
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .product-info {
+    padding: 6px;         /* tiny padding */
+  }
+
+  .category {
+    font-size: 9px;
+    margin-bottom: 2px;
+  }
+
+  .product-name {
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+
+  .price {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  .add-btn {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 6px;
+    border-radius: 3px;
+    background: #c28b5a;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+}
+@media (max-width: 600px) {
+
+  /* keep all your other mobile styles here */
+
+  /* REPLACE ONLY THIS PART ↓ */
+  .add-btn {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 6px;
+    border-radius: 4px;
+    background: #c28b5a;
+  }
+
+}

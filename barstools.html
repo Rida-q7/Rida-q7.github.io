@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carpets</title>
+  <link rel="stylesheet" href="style.css"> 
+  <meta name="google-site-verification" content="V05J-q1Dg5J2TplGOp3k5Wo1mM21lxGcQUEe3UZaP_o" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Italiana&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+  <!-- your existing CSS file -->
+</head>
+<body>
+
+<div class="page-overlay" id="page-overlay"></div>
+  <div class="announcement-bar">
+  <div class="announcement-text">
+    Free delivery on orders over Rs.10,000!
+  </div>
+  <div class="top-bar-icons">
+    <a
+  href="https://www.facebook.com/YourPageUsername"
+  class="social-icon facebook"
+  title="Facebook"
+  target="_blank"
+>
+  <i class="fab fa-facebook-f"></i>
+</a>
+
+    <a
+  href="https://www.tiktok.com/@YourTikTokUsername"
+  class="social-icon tiktok"
+  title="TikTok"
+  target="_blank"
+>
+  <i class="fab fa-tiktok"></i>
+</a>
+
+  </div>
+</div>
+
+
+  <!-- Top Info Bar -->
+  <div class="top-strip">
+    <div class="left-contact">
+      <p>📞 0832443490</p>
+      <p>✉️ support@mrfa.com</p>
+    </div>
+    <div class="login-icon tooltip">
+  <button onclick="window.location.href='login.html'">👤</button>
+  <span class="tooltip-text">Login</span>
+</div>
+
+
+  </div>
+
+  <!-- Header Section -->
+  <header class="main-header">
+
+    <div class="branding">
+  <h1 class="brand-name">MRF</h1>
+  <p class="slogan">Multi Royal Furniture </p>
+</div>
+
+    <div class="header-icons">
+      <span class="icon" id="search-icon">🔍</span>
+      <span class="icon" id="cart-icon">🛒</span>
+    </div>
+  </header>
+
+  <!-- Search Overlay -->
+<div class="search-overlay" id="search-overlay">
+  <input type="text" id="search-input" placeholder="Search..." />
+  <button id="search-btn">Search</button>
+</div>
+
+
+
+  <!-- Cart Sidebar -->
+  <div class="cart-sidebar" id="cart-sidebar">
+  <span class="close-cart" id="close-cart-btn">✖</span>
+  <h2>Your Cart</h2>
+  
+  <div class="cart-content">
+    <p>Subtotal: <span id="subtotal">Rs. 0.00</span></p>
+    <button onclick="window.location.href='checkout.html'">Checkout</button>
+  </div>
+</div>
+</header>
+
+
+<nav class="navbar">
+<div class="hamburger" id="hamburger">&#9776;</div>
+
+<ul class="nav-menu"id="nav-menu">
+  <li><a href="index.html">Home</a></li>
+
+  <!-- Bedroom -->
+  <li class="dropdown">
+    <a href="bedroom.html">Bedroom ▾</a>
+    <ul class="dropdown-menu">
+      <li class="sub-dropdown">
+        <a href="#">Furniture </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href=" bed.html">Beds</a></li>
+          <li><a href="headboard.html">Headboards</a></li>
+          <li><a href="dressers.html">Dressers</a></li>
+         <li><a href="bed sets.html">Bed Sets</a></li>
+        </ul>
+      </li>
+      
+      <li class="sub-dropdown">
+        <a href="#">Storage </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="wardrobes.html">Wardrobes</a></li>
+          <li><a href="nightstands.html">Nightstands</a></li>
+          
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Accessories </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="mirrors.html">Mirrors</a></li>
+        <li><a href="carpets.html">Carpets</a></li>
+           <li><a href="mattress.html">Foam Mattress</a></li>
+         
+   
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <!-- Living Room -->
+  <li class="dropdown">
+    <a href="living-room.html">Living Room ▾</a>
+    <ul class="dropdown-menu">
+      <li class="sub-dropdown">
+        <a href="#">Furniture </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="coffee-tables.html">Coffee Tables</a></li>
+          <li><a href="tv-units.html">TV Units</a></li>
+          <li><a href="sofa-beds.html">Sofa Beds</a></li>
+
+
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Seating </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="Lounge suites.html">Lounge suites</a></li>
+         
+        </ul>
+      </li>
+      
+    </ul>
+  </li>
+
+  <!-- Kitchen -->
+  <li class="dropdown">
+    <a href="kitchen.html">Kitchen ▾</a>
+    <ul class="dropdown-menu">
+      <li class="sub-dropdown">
+        <a href="#">Furniture </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="kitchen-bases.html">Kitchen Bases</a></li>
+          <li><a href="kitchen-units.html">Kitchen Units</a></li>
+          <li><a href="kitchen-schemes.html">Kitchen Schemes</a></li>
+ <li><a href="kitchen-dressers.html">Kitchen dressers</a></li>
+ <li><a href="kitchen-stands.html">Kitchen stands</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Seating </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="barstools.html">Barstools</a></li>
+         <li><a href="loose-chairs.html">Loose Chairs</a></li>
+         <li><a href="rocker-chairs.html">Rocker Chairs</a></li>
+
+           <li><a href="rocker-chairs.html">Rocker Chairs</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Appliances </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="cooker-hoods.html">Cooker Heads</a></li>
+          <li><a href="dishwashers.html">Dishwashers</a></li>
+          <li><a href="dryers.html">Dryers</a></li>
+          <li><a href="freezers.html">Freezers</a></li>
+          <li><a href="fridge.html">Fridge</a></li>
+          <li><a href="oven&stoves.html">Oven & Stoves</a></li>
+          <li><a href="hobs.html">Hobs</a></li>
+          <li><a href="washing-machines.html">Washing Machines</a></li> 
+          <li><a href="air-coolers.html">Air-coolers</a></li>
+          <li><a href="air-fryers.html">Air-Fryers</a></li>
+         <li><a href="blenders-mixers.html">Blenders & Mixers</a></li>
+          <li><a href="blenders-mixers.html">Blenders & Mixers</a></li>
+ <li><a href="coffee-grinders.html">Coffee Grinders</a></li>
+ <li><a href="coffee-machines.html">Coffee Machines</a></li>
+ <li><a href="cookers.html">Cookers</a></li>
+ <li><a href="kettles.html">Kettles</a></li>
+ <li><a href="toasters.html">Toasters</a></li>
+ <li><a href="microwaves.html">Microwaves</a></li>
+ <li><a href="accessories.html">Accessories</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Accessories </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="cookware.html">Cookware</a></li>
+          <li><a href="utensils.html">Utensils</a></li>
+          <li><a href="bakeware.html">Bakeware</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  
+  <!-- Office -->
+  <li class="dropdown">
+    <a href="office.html">Office ▾</a>
+    <ul class="dropdown-menu">
+      <li class="sub-dropdown">
+        <a href="#">Furniture </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="office-desks.html">Desks</a></li>
+          <li><a href="reception-desks.html">Reception Desks</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Seating </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="executive-chairs.html">Executive Chairs</a></li>
+          <li><a href="ergonomic-chairs.html">Ergonomic Chairs</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Storage </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="filing-cabinets.html">Filing Cabinets</a></li>
+          <li><a href="lockers.html">Lockers</a></li>
+        </ul>
+      </li>
+      <li class="sub-dropdown">
+        <a href="#">Accessories </a>
+        <ul class="sub-dropdown-menu">
+          <li><a href="monitor-stands.html">Monitor Stands</a></li>
+          <li><a href="whiteboards.html">Whiteboards</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+
+<a
+  href="https://wa.me/923001234567"
+  class="floating-whatsapp"
+  title="Chat with us on WhatsApp"
+  target="_blank"
+>
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb">
+    <a href="index.html">Home</a> /
+    <a href="bedroom.html">Bedroom</a> /
+    <a href="furniture.html">Furniture</a> /
+    <span>Barstools</span>
+  </nav>
+
+  <!-- Beds Page Content -->
+<main class="beds-page">
+
+  <!-- Page Heading + Filter Bar in One Row -->
+<div class="page-header">
+  <h1 class="page-title">Barstools</h1>
+  <div class="filter-bar">
+    <div class="filter-dropdown">
+      <button class="filter-btn">Price ▾</button>
+      <div class="filter-options">
+        <p onclick="sortProducts('low-high')">Low to High</p>
+        <p onclick="sortProducts('high-low')">High to Low</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Product Grid -->
+  <div class="product-grid" id="product-grid">
+
+    <!-- Example Product -->
+    <div class="product-card" data-price=" R1,199.00">
+      <a href="product-ba1.html">
+        <img src="images/ba1.jpg" alt="Modern Set of 2 Perforated 
+">
+      </a>
+      <h3> Modern Set of 2 Perforated
+</h3>
+      <p class="price">R1,199.00</p>
+      <button class="add-to-cart-btn"
+  data-id="ba1"
+  data-name="Modern Set of 2 Perforated 
+"
+  data-price="R1,199.00"
+  data-image="images/ba1.jpg"
+  data-link="product-ba1.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+    <div class="product-card" data-price=" RR8,999.00
+
+">
+      <a href="product-ba2.html">
+        <img src="images/ba2.jpg" alt="Modern Set of 4 Grey Bar ">
+      </a>
+      <h3>Modern Set of 4 Grey Bar </h3>
+      <p class="price">R8,999.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba2"
+  data-name="Modern Set of 4 Grey Bar"
+  data-price="R8,999.00
+
+"
+  data-image="images/ba2.jpg"
+  data-link="product-ba2.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+    <div class="product-card" data-price="R2,349.00
+
+">
+      <a href="product-ba3.html">
+        <img src="images/ba3.jpg" alt="Modern Set of 4 Perforated ">
+      </a>
+      <h3>Modern Set of 4 Perforated </h3>
+      <p class="price">R2,349.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba3"
+  data-name="Modern Set of 4 Perforated "
+  data-price="R2,349.00
+
+"
+  data-image="images/ba3.jpg"
+  data-link="product-ba3.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+<div class="product-card" data-price="R5,899.00
+
+">
+      <a href="product-ba4.html">
+        <img src="images/ba4.jpg" alt="Modern Set of 2 Grey Bar   ">
+      </a>
+      <h3>Modern Set of 2 Grey Bar </h3>
+      <p class="price">5,899.00</p>
+      <button class="add-to-cart-btn"
+  data-id="ba4"
+  data-name="3 Piece Kitchen Set – UK Oak "
+  data-price="5,899.00"
+  data-image="images/ba4.jpg"
+  data-link="product-ba4.html">
+  Add to Cart
+</button>
+
+    </div>
+
+
+ <div class="product-card" data-price="R1,700.00
+
+">
+      <a href="product-ba5.html">
+        <img src="images/ba5.jpg" alt="Set of 4 Round Bar Stools – Black  ">
+      </a>
+      <h3>Set of 4 Round Bar Stools – Black
+</h3>
+      <p class="price">R1,700.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba5"
+  data-name="Set of 4 Round Bar Stools – Black"
+  data-price="R1,700.00
+
+"
+  data-image="images/ba5.jpg"
+  data-link="product-ba5.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+ <div class="product-card" data-price="R898.00
+
+">
+      <a href="product-ba6.html">
+        <img src="images/ba6.jpg" alt="Set of 2 Round Bar Stools – Black">
+      </a>
+      <h3>Set of 2 Round Bar Stools – Black
+</h3>
+      <p class="price">R898.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba6"
+  data-name="Set of 2 Round Bar Stools – Black
+"
+  data-price="RR898.00"
+  data-image="images/ba6.jpg"
+  data-link="product-ba6.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+ <div class="product-card" data-price="R699.00">
+      <a href="product-ba7.html">
+        <img src="images/ba7.jpg" alt="Suede Bar Chair 
+">
+      </a>
+      <h3>Suede Bar Chair 
+</h3>
+      <p class="price">R699.00</p>
+      <button class="add-to-cart-btn"
+  data-id="ba7"
+  data-name="Suede Bar Chair
+"
+  data-price="R699.00"
+  data-image="images/bs7.jpg"
+  data-link="product-bs7.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+ <div class="product-card" data-price="R799.00
+
+
+
+">
+      <a href="product-ba8.html">
+        <img src="images/ba8.jpg" alt="Barstool Chrome Frame – 
+ ">
+      </a>
+      <h3>Barstool Chrome Frame –
+ </h3>
+      <p class="price">R799.00
+
+
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba8"
+  data-name="Barstool Chrome Frame – 
+ "
+  data-price="R799.00
+
+
+
+"
+  data-image="images/ba8.jpg"
+  data-link="product-ba8.html">
+  Add to Cart
+</button>
+
+    </div>
+
+
+<div class="product-card" data-price="R749.00
+
+">
+      <a href="product-ba9.html">
+        <img src="images/ba9.jpg" alt="Barstool – Black ">
+      </a>
+      <h3>Barstool – Black</h3>
+      <p class="price">R749.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba9"
+  data-name="Barstool – Black "
+  data-price="R749.00
+
+"
+  data-image="images/ba9.jpg"
+  data-link="product-ba9.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+
+
+<div class="product-card" data-price="R2,300.00
+
+">
+      <a href="product-ba10.html">
+        <img src="images/ba10.jpg" alt="Set of 2 Stylish Gold Frame Bar Chairs ">
+      </a>
+      <h3>Set of 2 Stylish Gold Frame Bar Chairs </h3>
+      <p class="price">R2,300.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba10"
+  data-name="Set of 2 Stylish Gold Frame Bar Chairs "
+  data-price="R2,300.00
+
+"
+  data-image="images/ba10.jpg"
+  data-link="product-ba10.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+
+<div class="product-card" data-price="R4,600.00
+
+
+
+">
+      <a href="product-ba11.html">
+        <img src="images/ba11.jpg" alt="Set of 4 Stylish Gold Frame Bar Chairs
+
+ ">
+      </a>
+      <h3>Set of 4 Stylish Gold Frame Bar Chairs
+ </h3>
+      <p class="price">R4,600.00
+
+
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba11"
+  data-name="Set of 4 Stylish Gold Frame Bar Chairs
+ "
+  data-price="R4,600.00
+
+
+
+"
+  data-image="images/ba11.jpg"
+  data-link="product-ba11.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+<div class="product-card" data-price="R1,299.00
+
+">
+      <a href="product-ba12.html">
+        <img src="images/ba12.jpg" alt="Stylish Gold Frame Bar Chair
+">
+      </a>
+      <h3>Stylish Gold Frame Bar Chair
+</h3>
+      <p class="price">R1,299.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba12"
+  data-name="Stylish Gold Frame Bar Chair
+"
+  data-price="R1,299.00
+
+"
+  data-image="images/ba12.jpg"
+  data-link="product-ba12.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+<div class="product-card" data-price="R2,150.00
+
+">
+      <a href="product-ba13.html">
+        <img src="images/ba13.jpg" alt="Set of 2 Stylish Gold Frame  ">
+      </a>
+      <h3>Set of 2 Stylish Gold Frame  </h3>
+      <p class="price">R2,150.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba13"
+  data-name="Set of 2 Stylish Gold Frame   "
+  data-price="R2,150.00
+
+"
+  data-image="images/ba13.jpg"
+  data-link="product-ba13.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+<div class="product-card" data-price="R4,300.00
+
+">
+      <a href="product-ba14.html">
+        <img src="images/ba14.jpg" alt="Set of 4 Stylish Gold Frame ">
+      </a>
+      <h3>Set of 4 Stylish Gold Frame </h3>
+      <p class="price">R4,300.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba14"
+  data-name="Set of 4 Stylish Gold Frame "
+  data-price="R4,300.00
+
+"
+  data-image="images/ba14.jpg"
+  data-link="product-ba14.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+<div class="product-card" data-price="R1,199.00
+
+">
+      <a href="product-ba15.html">
+        <img src="images/ba15.jpg" alt="Stylish Gold Frame Bar Chair With Wheels –">
+      </a>
+      <h3>Stylish Gold Frame Bar Chair With Wheels –</h3>
+      <p class="price">R1,199.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba15"
+  data-name="Stylish Gold Frame Bar Chair With Wheels –"
+  data-price="R1,199.00
+
+"
+  data-image="images/ba15.jpg"
+  data-link="product-ba15.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+
+
+<div class="product-card" data-price="R1,299.00
+
+
+
+ ">
+      <a href="product-ba16.html">
+        <img src="images/ba16.jpg" alt="Gold Frame Bar Chair – ">
+      </a>
+      <h3>Gold Frame Bar Chair – </h3>
+      <p class="price">R1,299.00
+
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba16"
+  data-name="Gold Frame Bar Chair – "
+  data-price="R1,299.00
+
+
+
+"
+  data-image="images/ba16.jpg"
+  data-link="product-ba16.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="product-card" data-price="R2,300.00">
+      <a href="product-ba17.html">
+        <img src="images/ba17.jpg" alt="Set of 2 Gold Frame Bar">
+      </a>
+      <h3>Set of 2 Gold Frame Bar
+</h3>
+      <p class="price">R2,300.00</p>
+      <button class="add-to-cart-btn"
+  data-id="ba17"
+  data-name="Set of 2 Gold Frame Bar
+"
+  data-price="R2,300.00"
+  data-image="images/ba17.jpg"
+  data-link="product-ba17.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+
+
+<div class="product-card" data-price="R4,600.00">
+      <a href="product-ba18.html">
+        <img src="images/ba18.jpg" alt="Set of 4 Gold Frame Bar">
+      </a>
+      <h3>Set of 4 Gold Frame Bar</h3>
+      <p class="price">R4,600.00</p>
+      <button class="add-to-cart-btn"
+  data-id="ba18"
+  data-name="Set of 4 Gold Frame Bar"
+  data-price="R4,600.00"
+  data-image="images/ba18.jpg"
+  data-link="product-ba18.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+
+
+
+<div class="product-card" data-price="R499.00
+
+">
+      <a href="product-ba19.html">
+        <img src="images/ba19.jpg" alt="Black PU Leather Bar Chair
+
+">
+      </a>
+      <h3>Black PU Leather Bar Chair
+
+</h3>
+      <p class="price">R499.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba19"
+  data-name="Black PU Leather Bar Chair
+
+"
+  data-price="R499.00
+
+"
+  data-image="images/ba19.jpg"
+  data-link="product-ba19.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+<div class="product-card" data-price="R699.00">
+      <a href="product-ba20.html">
+        <img src="images/ba20.jpg" alt="PU Leather Bar Chair
+">
+      </a>
+      <h3>PU Leather Bar Chair
+</h3>
+      <p class="price">R699.00</p>
+      <button class="add-to-cart-btn"
+  data-id="ba20"
+  data-name="PU Leather Bar Chair
+"
+  data-price="R699.00"
+  data-image="images/ba20.jpg"
+  data-link="product-ba20.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="product-card" data-price="R1,299.00
+
+">
+      <a href="product-ba21.html">
+        <img src="images/ba21.jpg" alt="Contemporary Barstool –">
+      </a>
+      <h3>Contemporary Barstool –</h3>
+      <p class="price">R1,299.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba21"
+  data-name="Contemporary Barstool –"
+  data-price="R1,299.00
+
+"
+  data-image="images/ba21.jpg"
+  data-link="product-ba21.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="product-card" data-price="R699.00
+
+">
+      <a href="product-ba22.html">
+        <img src="images/ba22.jpg" alt="Minimalist Barstool –">
+      </a>
+      <h3>Minimalist Barstool –</h3>
+      <p class="price">R699.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba22"
+  data-name="Minimalist Barstool –"
+  data-price="R699.00
+"
+  data-image="images/ba22.jpg"
+  data-link="product-ba22.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+
+
+
+
+
+     <div class="product-card" data-price="R1,250.00
+
+">
+      <a href="product-ba23.html">
+        <img src="images/ba23.jpg" alt="Set of 2 Suede Bar Chairs –
+
+ ">
+      </a>
+      <h3>Set of 2 Suede Bar Chairs – </h3>
+      <p class="price">R1,250.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba23"
+  data-name="Set of 2 Suede Bar Chairs – "
+  data-price="R1,250.00
+
+"
+  data-image="images/ba23.jpg"
+  data-link="product-ba23.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+
+
+
+
+
+     <div class="product-card" data-price="R2,500.00
+
+">
+      <a href="product-ba24.html">
+        <img src="images/ba24.jpg" alt="Set of 4 Suede Bar Chairs –">
+      </a>
+      <h3>Set of 4 Suede Bar Chairs –</h3>
+      <p class="price">R2,500.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba24"
+  data-name="Set of 4 Suede Bar Chairs –"
+  data-price="R2,500.00
+"
+  data-image="images/ba24.jpg"
+  data-link="product-ba24.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+
+
+
+     <div class="product-card" data-price="R849.00">
+      <a href="product-ba25.html">
+        <img src="images/ba25.jpg" alt="Barstool Short Back – Black ">
+      </a>
+      <h3>Barstool Short Back – Black </h3>
+      <p class="price">R849.00</p>
+      <button class="add-to-cart-btn"
+  data-id="ba25"
+  data-name="Barstool Short Back – Black "
+  data-price="R849.00"
+  data-image="images/ba25.jpg"
+  data-link="product-ba25.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+
+
+<div class="product-card" data-price="R1,399.00
+
+">
+      <a href="product-ba26.html">
+        <img src="images/ba26.jpg" alt=" Bar Chair Adjustable Velvet ">
+      </a>
+      <h3>Bar Chair Adjustable Velvet  </h3>
+      <p class="price">R1,399.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba26"
+  data-name="Bar Chair Adjustable Velvet "
+  data-price="R1,399.00
+"
+  data-image="images/ba26.jpg"
+  data-link="product-ba26.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+
+
+<div class="product-card" data-price="R799.00">
+      <a href="product-ba27.html">
+        <img src="images/ba27.jpg" alt=" Barstool With Arm Rest – ">
+      </a>
+      <h3>Barstool With Arm Rest –  </h3>
+      <p class="price">R799.00</p>
+      <button class="add-to-cart-btn"
+  data-id="ba27"
+  data-name="Barstool With Arm Rest –"
+  data-price="R799.00"
+  data-image="images/ba27.jpg"
+  data-link="product-ba27.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+
+<div class="product-card" data-price="R399.00
+
+">
+      <a href="product-ba28.html">
+        <img src="images/ba28.jpg" alt="Contemporary Wicker-Style
+
+ ">
+      </a>
+      <h3>Contemporary Wicker-Style
+
+ </h3>
+      <p class="price">R399.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba28"
+  data-name="Contemporary Wicker-Style"
+  data-price="R399.00"
+  data-image="images/ba28.jpg"
+  data-link="product-ba28.html">
+  Add to Cart
+</button>
+
+
+    </div>
+
+
+
+<div class="product-card" data-price="R6,999.00
+
+">
+      <a href="product-ba29.html">
+        <img src="images/ba29.jpg" alt= "Modern Colourful Plastic Armchair">
+      </a>
+      <h3>Modern Colourful Plastic Armchair </h3>
+      <p class="price">R6,999.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ks29"
+  data-name="Modern Colourful Plastic Armchair "
+  data-price="R6,999.00
+
+"
+  data-image="images/ba29.jpg"
+  data-link="product-ba29.html">
+  Add to Cart
+</button>
+    </div>
+
+
+
+
+<div class="product-card" data-price="R599.00
+">
+      <a href="product-ba30.html">
+        <img src="images/ba30.jpg" alt= "Modern Outdoor Plastic Chair">
+      </a>
+      <h3>Modern Outdoor Plastic Chair/h3>
+      <p class="price">R599.00
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba30"
+  data-name="Modern Outdoor Plastic Chair "
+  data-price="R599.00
+
+"
+  data-image="images/ba30.jpg"
+  data-link="product-ba30.html">
+  Add to Cart
+</button>
+    </div>
+
+
+
+<div class="product-card" data-price="R599.00">
+      <a href="product-ba31.html">
+        <img src="images/ba31.jpg" alt= "Modern Perforated Plastic
+ ">
+      </a>
+      <h3>Modern Perforated Plastic
+ </h3>
+      <p class="price">R599.00</p>
+      <button class="add-to-cart-btn"
+  data-id="ba31"
+  data-name="Modern Perforated Plastic
+  "
+  data-price="R599.00"
+  data-image="images/ba31.jpg"
+  data-link="product-ba31.html">
+  Add to Cart
+</button>
+    </div>
+
+
+
+
+<div class="product-card" data-price="R2,249.00
+
+">
+      <a href="product-ba32.html">
+        <img src="images/ba32.jpg" alt= "Bar Chair Grey">
+      </a>
+      <h3>Bar Chair Grey </h3>
+      <p class="price">R2,249.00
+      
+
+</p>
+      <button class="add-to-cart-btn"
+  data-id="ba32"
+  data-name="Bar Chair Grey"
+  data-price="R2,249.00
+
+"
+  data-image="images/ba32.jpg"
+  data-link="product-ba32.html">
+  Add to Cart
+</button>
+    </div>
+
+
+
+<div class="product-card" data-price="R599.00">
+      <a href="product-ba33.html">
+        <img src="images/ba33.jpg" alt= "Round Barstool – Black">
+      </a>
+      <h3>Round Barstool – Black </h3>
+      <p class="price">R599.00</p>
+      <button class="add-to-cart-btn"
+  data-id="ba33"
+  data-name="Round Barstool – Black"
+  data-price="R599.00"
+  data-image="images/ba33.jpg"
+  data-link="product-ba33.html">
+  Add to Cart
+</button>
+    </div>
+
+
+
+
+<div class="product-card" data-price="R899.00">
+      <a href="product-ba34.html">
+        <img src="images/ba34.jpg" alt= "Barstool – ">
+      </a>
+      <h3>Barstool – </h3>
+      <p class="price">R899.00</p>
+      <button class="add-to-cart-btn"
+  data-id="ba34"
+  data-name="Barstool – "
+  data-price="R899.00"
+  data-image="images/ba34.jpg"
+  data-link="product-ba34.html">
+  Add to Cart
+</button>
+    </div>
+
+
+</div>
+</main>
+
+
+
+<!-- === Footer Section === -->
+<footer class="site-footer">
+  <div class="footer-container">
+    
+    <!-- Brand Info -->
+    <div class="footer-column">
+      <h2 class="footer-logo">MRF<span>A</span></h2>
+      <p>Multi Royal Furniture – Premium furniture for every room in your home. 
+         Comfort, quality, and style that lasts.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sofas.html">Sofas</a></li>
+       <li><a href="beds & bunk beds.html">Beds</a></li>
+
+        <li><a href="chairs.html">Chairs</a></li>
+        <li><a href="decor.html">Decor</a></li>
+      </ul>
+    </div>
+
+    <!-- Customer Support -->
+    <div class="footer-column">
+      <h3>Customer Support</h3>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">Shipping & Returns</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-column">
+      <h3>Stay Updated</h3>
+      <p>Subscribe to get special offers, free giveaways, and new arrivals.</p>
+      <form id="newsletter-form" method="POST" action="/subscribe" class="newsletter-form">
+  <input type="email" name="email" placeholder="Enter your email" required>
+  <button type="submit">Subscribe</button>
+</form>
+
+
+      <!-- Social Media -->
+      <div class="footer-social">
+        <a href="https://facebook.com" target="_blank" class="social-icon fb">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-icon tw">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-icon ig">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="social-icon li">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-bottom">
+    <p>© 2025 Multi Royal Furniture. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script> <!-- your main JS -->
+</body>
+</html>
